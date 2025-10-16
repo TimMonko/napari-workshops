@@ -3,6 +3,7 @@ name: Deploy static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
+  pull_request:
   push:
     branches: ["main"]
 
@@ -21,11 +22,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # Build job for PRs and main
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -36,8 +34,6 @@ jobs:
           python-version: 3.13
       - name: qt libs
         uses: tlambert03/setup-qt-libs@19e4ef2d781d81f5f067182e228b54ec90d23b76 # v1.8
-      - name: Setup Pages
-        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
       - uses: aganders3/headless-gui@f85dd6316993505dfc5f21839d520ae440c84816 # v2.2
         name: Build workshop
         with:
@@ -46,11 +42,21 @@ jobs:
             source venv/bin/activate
             uv pip install -r requirements.txt
             cd napari-workshops
-            jupyter book start
+            jupyter book build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
         with:
           path: 'napari-workshops/_build/html'
+
+  # Deploy job - only runs on main
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
