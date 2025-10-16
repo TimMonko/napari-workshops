@@ -1,0 +1,39 @@
+version: 1
+project:
+  title: Create custom image visualization and analysis tools with napari
+  authors:
+    - name: napari core developers
+  github: napari/napari-scipy2025-workshop
+  thebe:
+    binder:
+      repo: napari/napari-scipy2025-workshop
+      provider: github
+      url: https://mybinder.org
+      ref: main
+  bibliography:
+    - references.bib
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/napari_workshop.pdf
+  toc:
+    - file: home.md
+    - file: installation.md
+    - file: notebook_setup.md
+    - file: nebari.md
+    - file: intro_napari_GUI.md
+    - file: plugins.md
+    - file: notebooks\spot_detection_functions.md
+    - file: notebooks\image_warping.md
+    - file: make_a_simple_plugin.md
+    - file: notebooks\index.md
+      children:
+        - file: notebooks\intro_bioimage_visualization.md
+        - file: notebooks\manual_annotation.md
+        - file: notebooks\interactive_analysis.md
+        - file: notebooks\spot_detection_basic.md
+site:
+  options:
+    logo: logo.ico
+    folders: true
+  template: book-theme

@@ -2,8 +2,10 @@
 
 # The napari application
 
-```{note} This content was based on [material from a workshop](https://github.com/dgmccart/intro-to-napari-workshop) prepared by Dannielle McCarthy (@dgmccart), Sean Martin (@seankmartin), and Melissa Weber Mendonça (@melissawm).
+```{note}
+This content was based on [material from a workshop](https://github.com/dgmccart/intro-to-napari-workshop) prepared by Dannielle McCarthy ([`@dgmccart`](https://github.com/dgmccart)), Sean Martin ([`@seankmartin`](https://github.com/seankmartin)), and Melissa Weber Mendonça ([`@melissawm`](https://github.com/melissawm)).
 ```
+
 For full documentation of the napari viewer, please see [the Viewer tutorial](https://napari.org/stable/tutorials/fundamentals/viewer.html) in the napari docs. Here we will just have an overview.
 
 ## Launch napari
@@ -16,6 +18,7 @@ Remember to activate the right environment!
 ```bash
 conda activate napari-workshop
 ```
+
 ````
 
 Once you have the proper environment active, you can launch napari by typing `napari`:
@@ -35,7 +38,6 @@ You will then be able to proceed with the rest of the instructions on this page.
 After a few seconds (or up to a minute if it's the first launch and you have various security and antivirus software installed), you will get the `viewer` window, which is annotated below:
 
 ![Viewer](resources/viewer-with-arrows.png)  
-
 
 ## Open an Image
   

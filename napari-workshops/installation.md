@@ -40,7 +40,7 @@ conda update conda
 conda config --add channels conda-forge
 ```
 
-Once you have that set, you can skip to [the next section](setting-up-your-napari-workshop-environment).
+Once you have that set, you can skip to [the next section](#setting-up-your-napari-workshop-environment).
 ````
 
 1. In your web browser,  go to:  
@@ -116,6 +116,8 @@ Once you have that set, you can skip to [the next section](setting-up-your-napar
    ```
 
    Again, for changes to take effect, you will need to close and re-open your current shell.
+
+(setting-up-your-napari-workshop-environment)=
 
 ## Setting up your napari workshop environment
 
