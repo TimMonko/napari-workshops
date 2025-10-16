@@ -1,5 +1,5 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# Workflow for building and deploying the napari workshops to GitHub Pages
+name: Build and Deploy Site
 
 on:
   # Runs on pushes targeting the default branch
@@ -39,7 +39,7 @@ jobs:
         with:
           run: |
             uv venv -p 3.13
-            source venv/bin/activate
+            source .venv/bin/activate
             uv pip install -r requirements.txt
             cd napari-workshops
             jupyter book build
