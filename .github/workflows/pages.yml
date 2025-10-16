@@ -41,12 +41,11 @@ jobs:
         run: |
           pip install --pre "jupyter-book==2.*"
           pip install -r requirements.txt
-          cd napari-workshops
-          jupyter book build --html
+          jupyter-book build --html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
         with:
-          path: 'napari-workshops/_build/html'
+          path: './_build/html'
 
   # Deploy job - only runs on main
   deploy:
