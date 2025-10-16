@@ -30,10 +30,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
-      - name: Setup Python
-        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+      - name: Set up Python
+        uses: astral-sh/setup-uv@3259c6206f993105e3a61b142c2d97bf4b9ef83d  # v7.1.0
         with:
-          python-version: '3.11'
+          python-version: 3.13
       - name: qt libs
         uses: tlambert03/setup-qt-libs@19e4ef2d781d81f5f067182e228b54ec90d23b76 # v1.8
       - name: Setup Pages
@@ -42,8 +42,11 @@ jobs:
         name: Build workshop
         with:
           run: |
-            pip install -r requirements.txt
-            jupyter book build napari-workshops
+            uv venv -p 3.13 --python-preference=only-system
+            source venv/bin/activate
+            uv pip install -r requirements.txt
+            cd napari-workshops
+            jupyter book start
       - name: Upload artifact
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
         with:
