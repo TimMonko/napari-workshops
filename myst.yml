@@ -23,15 +23,15 @@ project:
     - file: nebari.md
     - file: intro_napari_GUI.md
     - file: plugins.md
-    - file: notebooks\spot_detection_functions.md
-    - file: notebooks\image_warping.md
+    - file: notebooks/spot_detection_functions.md
+    - file: notebooks/image_warping.md
     - file: make_a_simple_plugin.md
-    - file: notebooks\index.md
+    - file: notebooks/index.md
       children:
-        - file: notebooks\intro_bioimage_visualization.md
-        - file: notebooks\manual_annotation.md
-        - file: notebooks\interactive_analysis.md
-        - file: notebooks\spot_detection_basic.md
+        - file: notebooks/intro_bioimage_visualization.md
+        - file: notebooks/manual_annotation.md
+        - file: notebooks/interactive_analysis.md
+        - file: notebooks/spot_detection_basic.md
 site:
   options:
     logo: logo.ico
