@@ -28,6 +28,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
       - name: Setup Python
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
@@ -41,12 +43,11 @@ jobs:
         run: |
           pip install --pre "jupyter-book==2.*"
           pip install -r requirements.txt
-          cd napari-workshops
-          jupyter book build --html
+          jupyter-book build --html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
         with:
-          path: 'napari-workshops/_build/html'
+          path: './_build/html'
 
   # Deploy job - only runs on main
   deploy:
