@@ -13,5 +13,6 @@ uv pip install -r requirements.txt
 Build and serve
 
 ```bash
-jupyter book
+cd napari-workshops
+jupyter book start
 ```
