@@ -105,9 +105,14 @@ Here we will explore the fourth option, explicitly loading a 3D image using the 
 
 ```{code-cell} ipython3
 from tifffile import imread
+from pathlib import Path
+
+# Get the directory where this notebook is located
+notebook_dir = Path().resolve()
+data_dir = notebook_dir / 'data'
 
 # load the image data and inspect its shape
-nuclei = imread('data/nuclei.tif')
+nuclei = imread(data_dir / 'nuclei.tif')
 print(nuclei.shape)
 ```
 

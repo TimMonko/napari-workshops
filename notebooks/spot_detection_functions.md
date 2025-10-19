@@ -50,11 +50,16 @@ Or, you can load the data locally, if you cloned the repository:
 
 ```{code-cell} ipython3
 from skimage import io
+from pathlib import Path
 
-nuclei_path = 'data/nuclei_cropped.tif'
+# Get the directory where this notebook is located
+notebook_dir = Path().resolve()
+data_dir = notebook_dir / 'data'
+
+nuclei_path = data_dir / 'nuclei_cropped.tif'
 nuclei = io.imread(nuclei_path)
 
-spots_path = 'data/spots_cropped.tif'
+spots_path = data_dir / 'spots_cropped.tif'
 spots = io.imread(spots_path)
 ```
 
