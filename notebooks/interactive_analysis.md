@@ -219,7 +219,7 @@ nbscreenshot(viewer)
 We can now save our segmentation using our builtin save method.
 
 ```{code-cell} ipython3
-viewer.layers['nuclei_segmentation'].save('nuclei-automated-segmentation.tif', plugin='builtins')
+viewer.layers['nuclei_segmentation'].save('nuclei-automated-segmentation.tif')
 ```
 
 ## Interactive thresholding with a custom GUI element
@@ -252,6 +252,8 @@ def threshold(image: ImageData, percentile: int = 50) -> LabelsData:
 
 ```{code-cell} ipython3
 viewer.window.add_dock_widget(threshold, area="right")
+# Trigger the threshold widget to create the initial output layer
+threshold(viewer.layers['nuclei_mip'].data)
 ```
 
 ```{code-cell} ipython3
