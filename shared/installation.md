@@ -4,11 +4,7 @@
 
 ```{tip}
 For the best experience, we recommend installing and running napari on your local machine. 
-However, if you prefer to not install anything locally, you can run the workshop in the cloud: 
-
-* If you are at SciPy 2025, you can use the SciPy 2025 Nebari JupyterHub instance to run everything in the cloud. For instructions, please see [our Nebari guide](nebari).  
-
-* If the Nebari instace is no longer available, you also have the option of [running everything in the cloud using Binder](docs/launching_binder.md). Please note that performance, particularly 3D rendering, will be severely limited on this free resource!
+However, if you prefer to not install anything locally, you can run the workshop in the cloud. For instructions, please see {ref}`cloud-setup`.
 ```
 
 napari is a Python application and package, so it requires a working Python installation.

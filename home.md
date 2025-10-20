@@ -82,7 +82,7 @@ These workshops are designed to be:
 
 ## Contributing
 
-Found an issue or have suggestions? Please [open an issue](https://github.com/napari/napari-workshops/issues) or submit a pull request. We welcome contributions from the community!
+Found an issue or have suggestions? We welcome contributions from the community! Visit our GitHub repository to open an issue or submit a pull request.
 
 ## Acknowledgments
 

@@ -132,4 +132,4 @@ nbscreenshot(viewer)
 
 # Conclusions
 
-In this notebook, we have created and applied custom colormaps to `Image` layers. For additional information on colormaps in napari, please see the [`Image` layer tutorial](https://napari.org/tutorials/fundamentals/image.html#working-with-colormaps).
+In this notebook, we have created and applied custom colormaps to `Image` layers. For additional information on colormaps in napari, please see the [napari documentation on colormaps](https://napari.org/stable/howtos/layers/image.html).

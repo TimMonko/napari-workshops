@@ -193,7 +193,7 @@ We'll discuss strategies to make maintenance manageable!
 ## Getting Help
 
 - **Zulip #plugin-dev channel:** [napari.zulipchat.com](https://napari.zulipchat.com)
-- **GitHub discussions:** [github.com/napari/napari/discussions](https://github.com/napari/napari/discussions)
+- **GitHub discussions:** [github.com/napari/napari](https://github.com/napari/napari)
 - **Office hours:** Check the napari community calendar
 
 ## Next Steps
