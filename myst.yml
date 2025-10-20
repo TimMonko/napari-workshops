@@ -34,6 +34,7 @@ project:
         - file: notebooks/spot_detection_basic.md
 site:
   options:
-    logo: logo.ico
+    favicon: logo.ico
+    logo: logo.png
     folders: true
   template: book-theme
