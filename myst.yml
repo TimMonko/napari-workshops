@@ -35,6 +35,6 @@ project:
 site:
   options:
     favicon: logo.ico
-    logo: logo.png
+    logo: logo.ico
     folders: true
   template: book-theme
