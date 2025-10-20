@@ -91,7 +91,7 @@ Apply what you've learned in a complete workflow using the StarDist plugin for n
 
 - **napari documentation:** [napari.org](https://napari.org)
 - **napari hub:** [napari-hub.org](https://napari-hub.org) for plugins
-- **Community forum:** [image.sc](https://forum.image.sc/tag/napari)
+- **Community forum:** `forum.image.sc/tag/napari`
 - **Zulip chat:** [napari.zulipchat.com](https://napari.zulipchat.com)
 
 ## Next Steps

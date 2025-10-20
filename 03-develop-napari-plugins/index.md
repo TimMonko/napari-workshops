@@ -188,7 +188,7 @@ We'll discuss strategies to make maintenance manageable!
 - **npe2 documentation:** [napari.org/npe2](https://github.com/napari/npe2)
 - **Plugin development guide:** [napari.org/plugins](https://napari.org/stable/plugins/index.html)
 - **napari hub:** [napari-hub.org](https://napari-hub.org)
-- **Community forum:** [image.sc](https://forum.image.sc/tag/napari)
+- **Community forum:** `forum.image.sc/tag/napari`
 
 ## Getting Help
 

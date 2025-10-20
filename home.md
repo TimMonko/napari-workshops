@@ -77,7 +77,7 @@ These workshops are designed to be:
 
 - **napari documentation:** [napari.org](https://napari.org)
 - **napari hub:** [napari-hub.org](https://napari-hub.org)
-- **Community forum:** [image.sc/tag/napari](https://forum.image.sc/tag/napari)
+- **Community forum:** `forum.image.sc/tag/napari`
 - **Zulip chat:** [napari.zulipchat.com](https://napari.zulipchat.com)
 
 ## Contributing

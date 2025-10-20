@@ -136,7 +136,7 @@ Skills from this workshop enable you to:
 
 - **magicgui documentation:** [pyapp-kit.github.io/magicgui](https://pyapp-kit.github.io/magicgui)
 - **napari events guide:** [napari.org/guides/events](https://napari.org/stable/guides)
-- **Community forum:** [image.sc](https://forum.image.sc/tag/napari)
+- **Community forum:** `forum.image.sc/tag/napari`
 - **Zulip chat:** [napari.zulipchat.com](https://napari.zulipchat.com)
 
 ## Next Steps
