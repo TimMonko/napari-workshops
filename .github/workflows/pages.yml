@@ -6,6 +6,9 @@ on:
   pull_request:
   push:
     branches: ["main"]
+  schedule:
+    # Every Tuesday at 12:00 UTC
+    - cron: '0 12 * * 2'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -54,9 +57,9 @@ jobs:
         with:
           path: './_build/html'
 
-  # Deploy job - only runs on main
+  # Deploy job - only runs on main and not on schedule
   deploy:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'schedule'
     needs: build
     environment:
       name: github-pages
