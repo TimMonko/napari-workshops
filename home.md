@@ -4,7 +4,9 @@ Welcome to the napari workshops! This comprehensive workshop series takes you fr
 
 ## Workshop Series Overview
 
-### [Workshop 1: Introduction to napari](01-intro-napari/index.md) (Beginner, 3-4 hours)
+### Workshop 1: Introduction to napari (Beginner, 3-4 hours)
+
+[View Workshop 1](#intro-napari)
 
 Learn to use napari's graphical interface for bioimage visualization, manual annotation, and interactive analysis. This workshop is perfect for scientists who want to leverage napari's powerful visualization capabilities without writing code.
 
@@ -17,7 +19,9 @@ Learn to use napari's graphical interface for bioimage visualization, manual ann
 
 **Perfect for:** Microscopists, biologists, and image analysts new to napari
 
-### [Workshop 2: Extending napari with Scripts](02-extend-napari/index.md) (Intermediate, 3-4 hours)
+### Workshop 2: Extending napari with Scripts (Intermediate, 3-4 hours)
+
+[View Workshop 2](#extend-napari)
 
 Bridge the gap between GUI usage and development by learning to extend napari through scripting. You'll create interactive widgets, respond to events, and build reproducible analysis workflows that combine napari with the scientific Python ecosystem.
 
@@ -30,7 +34,9 @@ Bridge the gap between GUI usage and development by learning to extend napari th
 
 **Perfect for:** Python users who want to customize napari for their specific analysis needs
 
-### [Workshop 3: Developing napari Plugins](03-develop-napari-plugins/index.md) (Advanced but accessible, 4-5 hours)
+### Workshop 3: Developing napari Plugins (Advanced but accessible, 4-5 hours)
+
+[View Workshop 3](#develop-napari-plugins)
 
 Package your custom functionality as installable plugins to share with collaborators or the broader napari community. Learn about plugin architecture, testing, publishing, and maintenance.
 
@@ -48,15 +54,15 @@ Package your custom functionality as installable plugins to share with collabora
 
 ### Choose Your Path
 
-**Never used napari?** Start with [Workshop 1](01-intro-napari/index.md)
+**Never used napari?** Start with {ref}`intro-napari`
 
-**Comfortable with napari GUI but want to customize it?** Jump to [Workshop 2](02-extend-napari/index.md)
+**Comfortable with napari GUI but want to customize it?** Jump to {ref}`extend-napari`
 
-**Ready to build and share plugins?** Go to [Workshop 3](03-develop-napari-plugins/index.md)
+**Ready to build and share plugins?** Go to {ref}`develop-napari-plugins`
 
 ### Installation
 
-Use the [installation guide](shared/installation.md) to prepare your environment and install napari and its required dependencies locally. Running napari locally is likely to give you the best experience, but you can also run napari and the workshop materials in the cloud. See our [cloud setup instructions](shared/cloud_setup.md) for details.
+Use the {ref}`installation` guide to prepare your environment and install napari and its required dependencies locally. Running napari locally is likely to give you the best experience, but you can also run napari and the workshop materials in the cloud. See our {ref}`cloud setup instructions <cloud-setup>` for details.
 
 ## Workshop Philosophy
 

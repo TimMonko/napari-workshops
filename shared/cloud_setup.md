@@ -1,3 +1,5 @@
+(cloud-setup)=
+
 # Running napari in the Cloud
 
 If you can't install napari and the Jupyter notebook application locally, or if you prefer using a cloud instance of Jupyter to execute and interact with the workshop notebooks, you have two options for running everything in the cloud.
