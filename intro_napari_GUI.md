@@ -28,7 +28,7 @@ napari
 ```
 
 ````{note}
-If you are using [the Binder cloud setup](docs/launching_binder.md) or [Nebari](docs/nebari.md), then in the Jupyter lab interface, you can open a Desktop in a browser tab using the `D` "Desktop" tile and then open a Terminal session using the `$_` "Terminal" tile. In this terminal, you can launch napari in the Desktop browser tab using the command:
+If you are using [the Binder cloud setup](docs/launching_binder.md) or [Nebari](nebari.md), then in the Jupyter lab interface, you can open a Desktop in a browser tab using the `D` "Desktop" tile and then open a Terminal session using the `$_` "Terminal" tile. In this terminal, you can launch napari in the Desktop browser tab using the command:
 ```bash
 DISPLAY=:1.0 napari
 ```

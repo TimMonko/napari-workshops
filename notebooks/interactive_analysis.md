@@ -224,7 +224,7 @@ viewer.layers['nuclei_segmentation'].save('nuclei-automated-segmentation.tif')
 
 ## Interactive thresholding with a custom GUI element
 
-Interactivity can be greatly enhanced by custom GUI elements like sliders and push buttons, custom mouse functions, or custom keybindings (keyboard shortcuts). **[napari](https://napari.org/)** can easily be extended with these features, and a companion library **[magicgui](https://magicgui.readthedocs.io/en/latest/)** maintained by the napari team allows users to make extensions to the GUI without having to write any GUI code.
+Interactivity can be greatly enhanced by custom GUI elements like sliders and push buttons, custom mouse functions, or custom keybindings (keyboard shortcuts). **[napari](https://napari.org/)** can easily be extended with these features, and a companion library **[magicgui](https://pyapp-kit.github.io/magicgui/)** maintained by the napari team allows users to make extensions to the GUI without having to write any GUI code.
 
 We'll now explore adding such interactivity to **napari**.
 

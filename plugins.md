@@ -17,7 +17,7 @@ For more information on plugins, please see the [official Plugin documentation](
 
 ```{important}
 Most plugins are developed by the broader napari scientific community. Plugins and their functionalities may be very specific and not be robust enough for every use case! Also, maintaining a plugin can be a burden and plugin developers may not keep up with napari or the broader scientific Python ecosystem.  
-If you encounter issues with a napari plugin, please check the plugin's documentation and/or GitHub repository for more information or post on the [image.sc forum](https://forum.image.sc/).
+If you encounter issues with a napari plugin, please check the plugin's documentation and/or GitHub repository for more information or post on the image dot sc forum.
 ```
 
 ## Install Your First Plugins  

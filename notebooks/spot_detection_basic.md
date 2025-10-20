@@ -15,7 +15,7 @@ kernelspec:
 
 ## Overview
 In this activity, we will perform spot detection on some in situ sequencing data
-([Feldman and Singh et al., Cell, 2019](https://www.cell.com/cell/fulltext/S0092-8674(19)31067-0s)).
+([Feldman and Singh et al., Cell, 2019](https://doi.org/10.1016/j.cell.2019.09.016)).
 In doing so, we will combine methods from [scipy](https://www.scipy.org/) and
 [scikit-image](https://scikit-image.org/). The goal is to familiarize you with
 performing analysis that integrates the scientific python ecosystem and napari.
@@ -207,7 +207,7 @@ spot_sizes = 2 * np.sqrt(2) * blobs_log[:, 2]
 ```
 
 To visualize the results, add the spots to the viewer as a
-[Points layer](https://napari.org/stable/tutorials/fundamentals/points.html). If you
+[Points layer](https://napari.org/stable/howtos/layers/points.html). If you
 would like to see an example of using a points layer, see
 [this example](https://napari.org/gallery/add_points.html).
 

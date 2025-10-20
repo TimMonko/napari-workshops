@@ -185,7 +185,7 @@ gaussian_high_pass(viewer.layers['spots'].data)
 ```
 
 ```{important}
-Because we are just returning `ImageData`, there is no information passed about colormaps, blending, etc. If we want to specify that, we would need to annotate as [`LayerDataTuple`](https://napari.org/stable/guides/magicgui.html#returning-napari-types-layerdatatuple). (We will do this in the next example.)
+Because we are just returning `ImageData`, there is no information passed about colormaps, blending, etc. If we want to specify that, we would need to annotate as [`LayerDataTuple`](https://napari.org/stable/howtos/extending/magicgui.html#returning-napari-types-layerdatatuple). (We will do this in the next example.)
 ```
 For now you will need to manually or programmatically set any colormap/blending settings. (Let's also hide the previous filtering output.)
 
@@ -305,7 +305,7 @@ the viewer using the data in the `LayerDataTuple`. Briefly:
       dictionary. Some options to consider: `symbol`, `size`, `face_color`
 - `layer_type`: the name of the layer type as a string—in this case `'Points'`
 
-For more information on using the `LayerDataTuple` type, please see [the documentation](https://napari.org/stable/guides/magicgui.html#returning-napari-types-layerdatatuple).
+For more information on using the `LayerDataTuple` type, please see [the documentation](https://napari.org/stable/howtos/extending/magicgui.html#returning-napari-types-layerdatatuple).
 
 Also let's change the `image` argument type hint to `ImageLayer` so that we can access more
 properties if we'd like or be able to more easily set the value programmatically.
@@ -440,7 +440,7 @@ Worse yet, this will silently fail, because the builtin napari keybinding *will*
 ```
 
 There are actually a number of other events that you can connect callbacks to, other than just key presses.
-For more information, see the [napari events documentation](https://napari.org/stable/howtos/connecting_events.html).
+For more information, see the [napari events documentation](https://napari.org/stable/howtos/extending/connecting_events.html).
 
 ## Suggestions for further exploration
 
