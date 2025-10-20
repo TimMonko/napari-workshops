@@ -105,9 +105,16 @@ Here we will explore the fourth option, explicitly loading a 3D image using the 
 
 ```{code-cell} ipython3
 from tifffile import imread
+from pathlib import Path
+
+# Path of execution is different depending on whether the notebook is run locally or via jupyter-book
+if (Path() / 'notebooks' / 'data').exists():
+    data_dir = Path() / 'notebooks' / 'data'
+else:
+    data_dir = Path().resolve() / 'data'
 
 # load the image data and inspect its shape
-nuclei = imread('data/nuclei.tif')
+nuclei = imread(data_dir / 'nuclei.tif')
 print(nuclei.shape)
 ```
 
@@ -205,7 +212,7 @@ Let's now load in an additional channel of data containing a stain for cell memb
 from tifffile import imread
 
 # load the image data and inspect its shape
-membranes = imread('data/cell_membranes.tif')
+membranes = imread(data_dir / 'cell_membranes.tif')
 print(membranes.shape)
 ```
 

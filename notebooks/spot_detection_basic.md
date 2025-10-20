@@ -15,7 +15,7 @@ kernelspec:
 
 ## Overview
 In this activity, we will perform spot detection on some in situ sequencing data
-([Feldman and Singh et al., Cell, 2019](https://www.cell.com/cell/fulltext/S0092-8674(19)31067-0s)).
+([Feldman and Singh et al., Cell, 2019](https://doi.org/10.1016/j.cell.2019.09.016)).
 In doing so, we will combine methods from [scipy](https://www.scipy.org/) and
 [scikit-image](https://scikit-image.org/). The goal is to familiarize you with
 performing analysis that integrates the scientific python ecosystem and napari.
@@ -72,12 +72,16 @@ Alternatively, you can load the data locally, if you cloned the repository:
 
 ```{code-cell} ipython3
 from skimage import io
+from pathlib import Path
 
-nuclei_path = 'data/nuclei_cropped.tif'
-nuclei = io.imread(nuclei_path)
+# Path of execution is different depending on whether the notebook is run locally or via jupyter-book
+if (Path() / 'notebooks' / 'data').exists():
+    data_dir = Path() / 'notebooks' / 'data'
+else:
+    data_dir = Path().resolve() / 'data'
 
-spots_path = 'data/spots_cropped.tif'
-spots = io.imread(spots_path)
+nuclei = io.imread(data_dir / 'nuclei_cropped.tif')
+spots = io.imread(data_dir / 'spots_cropped.tif')
 ```
 
 ## View the data
@@ -203,7 +207,7 @@ spot_sizes = 2 * np.sqrt(2) * blobs_log[:, 2]
 ```
 
 To visualize the results, add the spots to the viewer as a
-[Points layer](https://napari.org/stable/tutorials/fundamentals/points.html). If you
+[Points layer](https://napari.org/stable/howtos/layers/points.html). If you
 would like to see an example of using a points layer, see
 [this example](https://napari.org/gallery/add_points.html).
 
