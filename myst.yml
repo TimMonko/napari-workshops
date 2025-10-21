@@ -41,8 +41,6 @@ project:
           title: Interactive Analysis
         - file: 01-intro-napari/05_using_plugins.md
           title: Using Plugins
-        - file: 01-intro-napari/06_stardist_workflow.md
-          title: StarDist Workflow
     
     # Workshop 2: Extending napari with Scripts (Intermediate)
     - title: "Workshop 2: Extending napari with Scripts"

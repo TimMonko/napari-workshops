@@ -19,7 +19,7 @@ By completing this workshop, you will be able to:
 - ✅ Perform manual annotation tasks
 - ✅ Execute interactive image analysis workflows combining napari with scikit-image
 - ✅ Install and use napari plugins from the napari hub
-- ✅ Apply plugin-based analysis workflows (e.g., segmentation with StarDist)
+- ✅ Apply plugin-based analysis workflows
 
 ## Prerequisites
 
@@ -77,15 +77,6 @@ Discover how to extend napari's functionality by installing and using community-
 - Using reader plugins for file formats
 - Accessing plugin widgets and functionality
 - Finding sample data from plugins
-
-### 6. StarDist Workflow
-Apply what you've learned in a complete workflow using the StarDist plugin for nuclei segmentation and measurement.
-
-**Topics covered:**
-- Plugin-based segmentation workflow
-- Parameter selection and optimization
-- Measuring segmented objects
-- Exporting results
 
 ## Getting Help
 
