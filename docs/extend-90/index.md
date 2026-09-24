@@ -21,15 +21,30 @@ required.
 
 ## Workshop schedule
 
-| Time | Activity | Duration |
-|------|----------|----------|
-| 0:00 | Welcome and environment check | 5 min |
-| 0:05 | Notebook orientation | 5 min |
-| 0:10 | Control napari from Python | 15 min |
-| 0:25 | Your data & its meaning (scale, units, axis labels) | 15 min |
-| 0:40 | From function to control panel (magicgui) | 20 min |
-| 1:00 | Demo — interactions, keybindings & plugins | 15 min |
-| 1:15 | Survey and wrap-up | 5 min |
+**Total time:** 90 minutes, including one 5-minute break. This session runs the
+**opening sections of the half-day
+[Introduction to napari: with Python](#extend-overview) blocks, in order**. Each
+source below is a *contiguous prefix* of the long-form page, so nothing is run
+out of sequence and no notebook state is lost — those pages stay the single
+source of truth for the teaching content.
+
+| Time | Segment | Source | Mode |
+|------|---------|--------|------|
+| 0:00 | Welcome and environment check | — | show |
+| 0:05 | Notebook orientation — run a cell | [Block 2 §1](#extend-block2-viewer) | follow along |
+| 0:10 | Control napari from Python | [Block 2 §1–3](#extend-block2-viewer) | follow along |
+| 0:25 | Your data & its meaning (scale, units, axis labels) | [Block 2 §4–5](#extend-block2-scale) | follow along |
+| 0:40 | **Break** | — | — |
+| 0:45 | From function to control panel (magicgui) | [Block 3 §1–2](#extend-block3-functions) | follow along |
+| 1:05 | Demo — interactions, keybindings & plugins | [Block 3 §3–5](#extend-block3-keybindings) → [Block 4](#extend-block4) | demo |
+| 1:20 | Survey and wrap-up | — | show |
+| 1:25 | Buffer | — | — |
+
+## Where to go deeper
+
+- Zarr and OME-Zarr from Python: [Block 2 §6](#extend-block2-zarr)
+- The plugin capstone, hands-on: [Block 4](#extend-block4)
+- Plugin *discovery* without code: [Part 1, plugins](#intro-block3-plugins)
 
 ## Prerequisites
 
@@ -43,5 +58,7 @@ required.
 
 - Just getting started with the viewer? Take
   [**Introduction to napari: the viewer**](#intro-gui-90-overview) (no code).
-- Prefer the full-length experience? See the
-  [half-day Introduction to napari: with Python](#extend-overview).
+- Want the whole thing rather than the 90-minute path? The
+  [half-day Introduction to napari: with Python](#extend-overview) continues from
+  where this session stops, including Zarr, custom keybindings, and packaging
+  your widget as a plugin.
