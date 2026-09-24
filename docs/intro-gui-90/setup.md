@@ -64,3 +64,28 @@ nbscreenshot(viewer)
 :tags: [remove-cell]
 viewer.close()
 ```
+
+# Plugins we will install
+
+We install plugins live during the session so you can see how it works. Each
+install takes a few minutes and ends with a restart, so installing them
+beforehand saves workshop time. The following plugins are used in the workshop:
+[ndevio](https://napari-hub.org/plugins/ndevio),
+[napari-ome-zarr](https://napari-hub.org/plugins/napari-ome-zarr),
+and [napari-skimage](https://napari-hub.org/plugins/napari-skimage).
+
+To install one: **Plugins > Install/Uninstall Plugins…**, search for its name,
+click **Install**, then restart napari when prompted.
+
+```{admonition} About the PyPI warning
+:class: warning
+The bundled app manages packages with `conda`. Installing a plugin from PyPI
+shows a warning because a PyPI package *may* conflict with the bundle; for the
+plugins above it is safe, so accept the warning and continue.
+```
+
+```{note} If the venue network is slow
+Streaming a remote OME-Zarr image needs a working connection. If the Wi-Fi is
+struggling we will fall back to a prepared local copy of the image, so you can
+still follow along — there is nothing to prepare on your side.
+```
