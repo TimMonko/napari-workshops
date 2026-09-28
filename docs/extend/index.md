@@ -3,7 +3,7 @@ label: extend-overview
 title: Overview
 ---
 
-**Level:** Beginner-intermediate | **Duration:** 90 minutes or ~4.5 hours | **Some scripting experience helpful**
+**Level:** Beginner-intermediate | **Duration:** 90 minutes or ~4 hours | **Some scripting experience helpful**
 
 This workshop teaches you how to extend napari's functionality through scripting
 and custom code. You'll learn your way around the napari GUI, control the viewer
