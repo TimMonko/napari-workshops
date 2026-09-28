@@ -26,6 +26,11 @@ teaching materials.
 | 1:23 | Survey and wrap-up | [Block 4 §Survey](#block4-analysis-wrapup) | show |
 | 1:26 | Buffer | — | — |
 
+# Prerequisites
+
+- No prior napari or Python experience needed
+- Complete the [installation instructions](#intro-setup) before the session
+
 # Cut from the half-day session
 
 - Gallery exploration breakout

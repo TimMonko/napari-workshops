@@ -15,9 +15,8 @@ title: Schedule (Half-day)
 | Segment | Time |
 |---------|------|
 | Welcome | 10 min |
-| Download napari | |
+| Download and install the napari bundle | 10 min |
 | About napari | 10 min |
-| Install the bundle | |
 | napari Demo | 10 min |
 | Installation check-in | 5 min |
 | What are images? | 10 min |
