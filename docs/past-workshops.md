@@ -1,18 +1,29 @@
-# Archived workshops
+---
+label: past-workshops
+---
 
-The links on this page are a historical archive of workshops and tutorials
-formerly listed in the [napari documentation](https://napari.org/).
-Some links may no longer be maintained. For current self-guided workshop
-materials, see the [workshop catalogue](#home); for live sessions, see
-the [event schedule](#events).
+# Past workshops
+
+Many workshops and tutorials about napari have been organized and taught by
+members of the napari community. This page collects them so they are easy to
+find, and as a record of that work. Thank you to everyone who has taught
+napari!
+
+The workshops listed here were developed independently of the
+[workshop catalogue](#home), so they reflect the napari version and practices
+of their time, and some links may no longer be maintained. For past sessions
+taught by the napari team from the catalogue materials, see
+[Events](#events-past).
 
 You can find more videos of talks, tutorials and demos on the
 [napari YouTube channel](https://www.youtube.com/channel/UCbTgw84ew4pxTJ9qu3W2hqg/playlists).
 
 ```{admonition} Got a workshop?
-If you have organized a napari workshop and would like to see it featured in
-the current catalogue, please contribute to the
-[napari/workshops repository](https://github.com/napari/workshops).
+If you have taught a workshop about napari, we would love to list it here!
+Open a pull request adding it to
+[this page](https://github.com/napari/workshops/blob/main/docs/past-workshops.md).
+Upcoming workshops can be listed under [community workshops](#events-community)
+on the Events page.
 ```
 
 ## Workshops
