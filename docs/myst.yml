@@ -52,8 +52,8 @@ project:
         - file: express/03_classification_and_3d.md
     - title: Events
       file: events.md
-    - title: Archive
-      file: archive/index.md
+    - title: Past workshops
+      file: past-workshops.md
     - title: Instructors
       children:
         - file: instructors/organizers.md
