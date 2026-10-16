@@ -10,10 +10,10 @@ It brings together:
 
 - **Workshop catalogue**: self-guided, modular workshop materials maintained by
   the napari team, free for anyone to learn from or teach with.
-- **[Events](https://napari.org/workshops/events/)**: upcoming and past live
+- **[Events](https://napari.org/workshops/events/)**: upcoming
   workshops, taught by the napari team or organized by the community.
 - **[Past workshops](https://napari.org/workshops/past-workshops/)**: a record of
-  workshops and tutorials about napari developed and taught by the community.
+  workshops and tutorials about napariy.
 - **Instructor resources**: organizer and instructor guides for running a
   session.
 
