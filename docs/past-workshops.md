@@ -4,16 +4,17 @@ label: past-workshops
 
 # Past workshops
 
-Many workshops and tutorials about napari have been organized and taught by
-members of the napari community. This page collects them so they are easy to
-find, and as a record of that work. Thank you to everyone who has taught
-napari!
+In addition to the past sessions taught by the napari team from the
+[catalogue materials](#home), many workshops and tutorials about napari have
+been organized and taught by members of the napari community.
+This page collects them so they are easy to find, and as a record of that work.
+Thank you to everyone who has taught napari!
 
-The workshops listed here were developed independently of the
-[workshop catalogue](#home), so they reflect the napari version and practices
-of their time, and some links may no longer be maintained. For past sessions
-taught by the napari team from the catalogue materials, see
-[Events](#events-past).
+For past sessions taught by the napari team from the, see [Events](#events-past).
+The [past community workshops](#events-community-past) listed here were
+developed independently of the workshop catalogue,
+so they reflect the napari version and practices of their time,
+and some links may no longer be maintained.
 
 You can find more videos of talks, tutorials and demos on the
 [napari YouTube channel](https://www.youtube.com/channel/UCbTgw84ew4pxTJ9qu3W2hqg/playlists).
@@ -26,7 +27,64 @@ Upcoming workshops can be listed under [community workshops](#events-community)
 on the Events page.
 ```
 
-## Workshops
+(events-past)=
+
+## Past napari team workshops
+
+For workshops organized by the community, see
+[Past workshops](#past-workshops).
+
+### I2KxBINA 2026
+
+**Format:** In-person at the Discovery Building, Madison, Wisconsin, USA,
+with live streaming for remote attendees.
+
+📅 **Wednesday, September 30, 2026** — Room 1170
+
+- **9:05–10:30 am US Central** —
+  [Introduction to napari: with the App](#intro-overview), part 1 of 2
+  (no code).
+- **11:00 am–12:30 pm US Central** —
+  [Introduction to napari: with Python](#extend-overview), part 2 of 2
+  (some scripting experience helpful).
+
+[I2KxBINA 2026 program](https://www.bioimagingnorthamerica.org/events/i2kxbina2026/#program)
+(these are listed as I2K workshops 28 and 31).
+
+### EuroSciPy 2026
+
+**Format:** In-person. Kraków, Poland
+
+📅 **July 23, 2026** — 9:00–10:30 am Central European Time
+
+[EuroSciPy schedule](https://euroscipy.org/schedule/#session/TRFRMH/)
+
+### SciPy 2026
+
+**Format:** In-person. Minneapolis, Minnesota, USA
+
+📅 **July 13, 2026** — 1:30–5:30 pm US Central Time
+
+[SciPy schedule](https://www.scipy2026.scipy.org/schedule#session/FVRNKP/)
+
+### Introduction to napari — pilot
+
+**Format:** Virtual, live-instructed | **Cost:** $20 USD | **Seats:** 20 per session
+
+📅 **March 25, 2026** — 3–7pm US Pacific Time
+([your local time](https://tinyurl.com/workshop-pacific-time)) |
+[Register](https://ti.to/nf-projects/intronapari-pacific)
+
+📅 **April 1, 2026** — 2–6pm London Time
+([your local time](https://tinyurl.com/workshop-atlantic-time)) |
+[Register](https://ti.to/nf-projects/intronapari-atlantic)
+
+These are **pilot** sessions — among the first to use the new workshop materials.
+No discount codes are available for pilots; more workshops will follow.
+
+(events-community-past)=
+
+## Past community workshops
 
 *Workshops are listed from newest to oldest.*
 
