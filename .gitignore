@@ -5,7 +5,7 @@ _build/
 # Python virtual environments
 .venv/
 
-# Generated CSS (built from napari-sphinx-theme + docs/_resources/_custom.css)
+# Generated CSS (built from docs/_resources/brand/napari-tokens.css + docs/_resources/_custom.css)
 *napari-theme.css
 
 # VS Code settings

@@ -127,12 +127,17 @@ nbscreenshot(viewer)
 viewer.close()
 ```
 
-### CSS and napari-sphinx theme
+### CSS and napari's colours
 
 The `docs-live` and `_docs-build` tasks automatically run `_copy-css`
-first, which merges `napari-sphinx-theme`'s CSS with `docs/_resources/_custom.css`
-to produce `docs/_resources/napari-theme.css`. This generated file is gitignored.
+first, which puts napari's shared colours (`docs/_resources/brand/napari-tokens.css`)
+in front of this site's overrides (`docs/_resources/_custom.css`) to produce
+`docs/_resources/napari-theme.css`. This generated file is gitignored.
 uv users need to run `uv run python docs/_scripts/copy_theme_css.py` once before building.
+
+Edit `_custom.css` for this site's look, using the `--napari-*` palette variables
+rather than hex values. `napari-tokens.css` is a copy of napari-sphinx-theme's
+brand file, the one napari.org uses; to update it, see `docs/_resources/brand/README.md`.
 
 ### Window management, sizing, and CI reproducibility
 

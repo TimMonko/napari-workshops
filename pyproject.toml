@@ -43,7 +43,6 @@ dev = [
     "mystmd>=1.11.0",
     "jupyterlab-myst",
     "jupytext",
-    "napari-sphinx-theme",
     "prek",
     "ruff",
 ]

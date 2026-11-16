@@ -1,15 +1,14 @@
 /* Custom overrides for the mystmd book-theme.
  *
- * This file is the source partial — it is merged with napari-sphinx-theme.css
- * by `scripts/copy_theme_css.py` to produce `resources/napari-theme.css`.
+ * This file is the source partial. `docs/_scripts/copy_theme_css.py` puts
+ * napari's shared colours (`_resources/brand/napari-tokens.css`, copied from
+ * napari-sphinx-theme) in front of it to produce `_resources/napari-theme.css`.
  *
- * The napari brand variables defined by the upstream theme (prepended above):
- *   --napari-primary-blue:  #80d1ff   navbar background (light)
- *   --napari-deep-blue:     #009bf2   links, accents
- *   --napari-light-blue:    #d2efff   subtle highlight tones
- *   --napari-purple:        #564C69   navbar background (dark)
- *   --napari-dark-gray:     #686868   muted text
- *   --napari-gray:          #f7f7f7   background highlights
+ * Use the palette variables (--napari-primary-blue, --napari-deep-blue,
+ * --napari-purple, ...) rather than hex values, so a palette change in the
+ * theme reaches this site. Pick light or dark with html.dark, as below:
+ * mystmd marks only dark mode, so the tokens' role variables
+ * (--napari-navbar, ...) can't tell a reader who chose light on a dark OS.
  *
  * Selector notes: the mystmd book-theme renders with Tailwind CSS utility
  * classes.  Overriding them requires !important or higher specificity.
@@ -21,13 +20,41 @@
  * napari-sphinx-theme navbar); in dark mode use the napari purple.
  */
 html:not(.dark) .sticky.shadow {
-  background-color: rgba(128, 209, 255, 0.85) !important; /* --napari-primary-blue @85% */
+  background-color: color-mix(in srgb, var(--napari-primary-blue) 85%, transparent) !important;
   backdrop-filter: blur(10px);
 }
 
 html.dark .sticky.shadow {
-  background-color: rgba(86, 76, 105, 0.85) !important;  /* --napari-purple @85% */
+  background-color: color-mix(in srgb, var(--napari-purple) 85%, transparent) !important;
   backdrop-filter: blur(10px);
+}
+
+/* ── Text sizes, as on napari.org ────────────────────────────────────────────
+ * These came along when the whole napari-sphinx-theme stylesheet was pasted
+ * in front of this file; they are the only rules of it that reached mystmd's
+ * pages, so they are kept here explicitly.
+ */
+p {
+  line-height: 1.5;
+  font-size: 1.0625rem;
+}
+
+h1 {
+  font-size: 2.1875rem;
+  line-height: 125%;
+}
+
+/* The theme's `color: var(--napari-color-text-base) !important` on headings
+ * met an undefined variable here, so headings took their parent's colour;
+ * `inherit` keeps that. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: inherit !important;
 }
 
 /* ── Links inside article body ───────────────────────────────────────────────
