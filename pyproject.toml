@@ -67,6 +67,9 @@ python = "==3.13"
 [tool.pixi.feature.express.tasks]
 jupyter-lab = { cmd = "jupyter lab docs/express" }
 
+[tool.pixi.feature.dev.pypi-dependencies]
+napari-sphinx-theme = { path = "../napari-sphinx-theme-search", editable = true, extras = ["search"] }
+
 [tool.pixi.feature.dev.tasks]
 _copy-css = "python docs/_scripts/copy_theme_css.py"
 _seed-geometry = "python docs/_scripts/seed_napari_geometry.py"
